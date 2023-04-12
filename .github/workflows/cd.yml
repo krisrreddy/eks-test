@@ -1,4 +1,4 @@
-name: cd1
+name: cd
 
 on:
   push:
