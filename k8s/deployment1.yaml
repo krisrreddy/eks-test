@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: customer
-        image: 004671524651.dkr.ecr.us-east-1.amazonaws.com/kubernetes-github-actions:latest
+        image: 004671524651.dkr.ecr.us-east-1.amazonaws.com/kubernetes-github-actionss:a6c23edc
         ports:
         - containerPort: 3000
           name: customer
