@@ -73,6 +73,10 @@ jobs:
         sudo mv kubectl /usr/local/bin/
         echo ${{ secrets.KUBECONFIG }} | base64 --decode > kubeconfig.yaml
 
+    - name: update kube config
+      run: aws eks update-kubeconfig --name hr-dev-eks-demo --region us-east-1
+
+
     - name: Deploy
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
