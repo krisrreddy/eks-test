@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: website
-  namespace: kubernetes-github-actions
+  namespace: default
   labels:
     app: website
 spec:
