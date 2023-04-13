@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: custoner
+  name: customer
   namespace: customerns
   labels:
     app: customer
