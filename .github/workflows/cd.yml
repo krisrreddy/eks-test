@@ -68,6 +68,5 @@ jobs:
     - name: Deploy
       run: |
         kubectl apply -f k8s/deployment.yaml
-        kubectl apply -f k8s/kustomization.tmpl.yaml
         kubectl apply -f k8s/namespace.yaml
         kubectl apply -f k8s/service.yaml
